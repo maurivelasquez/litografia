@@ -15,7 +15,7 @@ Class Printer(models.Model):
     roller_width=fields.float(string='Ancho del rodillo(Pulgadas)')
     set_time=fields.Float('Tiempo de preparación(Horas)')
     speed=fields.Float('Velocidad impresión(Pulgadas/min)')
-    type=fields.Selection([('digital','Digital'),('flexografica','Flexográfica')])    
+    print_type=fields.Selection([('digital','Digital'),('flexografica','Flexográfica')])    
 
 class PrintConfig(models.Model):
     _name='print.config'
